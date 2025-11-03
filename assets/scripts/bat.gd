@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # movement speed
-@export var speed = 750
+@export var speed = 800
 
 # function to receive input - 8 way movement
 func get_input():
