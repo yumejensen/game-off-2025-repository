@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cii3wnco6nk8b"
-path="res://.godot/imported/fungant_2.png-f4e4a5a5aafcf16d9a4f2872676a2d3c.ctex"
+uid="uid://daxdce4fexpp6"
+path="res://.godot/imported/bat-sprite-sheet.png-4f10683cb6d658fbc04a70c57c727c0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/fungant_2.png"
-dest_files=["res://.godot/imported/fungant_2.png-f4e4a5a5aafcf16d9a4f2872676a2d3c.ctex"]
+source_file="res://assets/sprites/bat-sprite-sheet.png"
+dest_files=["res://.godot/imported/bat-sprite-sheet.png-4f10683cb6d658fbc04a70c57c727c0e.ctex"]
 
 [params]
 

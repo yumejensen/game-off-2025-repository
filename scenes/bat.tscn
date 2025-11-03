@@ -1,0 +1,85 @@
+[gd_scene load_steps=13 format=3 uid="uid://b3cfw33mgsei6"]
+
+[ext_resource type="Script" uid="uid://8ul1kl8y4to6" path="res://assets/scripts/bat.gd" id="1_cnldk"]
+[ext_resource type="Texture2D" uid="uid://daxdce4fexpp6" path="res://assets/sprites/bat-sprite-sheet.png" id="1_uhqni"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uhqni"]
+radius = 44.55
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnldk"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48wkk"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ss3tx"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(1000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lv0ya"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(1500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fn3r"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(0, 500, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qtcx"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(500, 500, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4bhu"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(1000, 500, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0o7o"]
+atlas = ExtResource("1_uhqni")
+region = Rect2(1500, 500, 500, 500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_67y1s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnldk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48wkk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ss3tx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lv0ya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fn3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qtcx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4bhu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0o7o")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 12.0
+}]
+
+[node name="bat" type="CharacterBody2D"]
+script = ExtResource("1_cnldk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(641, 246)
+shape = SubResource("CircleShape2D_uhqni")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(700, 265)
+sprite_frames = SubResource("SpriteFrames_67y1s")
+animation = &"fly"
+autoplay = "fly"
+frame_progress = 0.58064526
