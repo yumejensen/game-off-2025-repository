@@ -11,7 +11,7 @@ func get_input():
 # set a variable for the animated sprite (got by holding control and drag)	
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 	
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	get_input()
 	move_and_slide()
 	
