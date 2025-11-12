@@ -7,12 +7,17 @@
 texture = ExtResource("2_yqjtg")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.617065, -64, 64, -53.68367, 64, 64, -55.63581, 64, -55.63581, -12.688858, -46.851204, -43.922997)
 2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
 3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -55.635803, 64, -55.635803, 64, 64, -64, 64)
 
 [sub_resource type="TileSet" id="TileSet_lbhrr"]
 tile_size = Vector2i(128, 128)
+physics_layer_0/collision_layer = 1
 sources/7 = SubResource("TileSetAtlasSource_lnu2h")
 
 [node name="Game" type="Node2D"]
