@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://8ul1kl8y4to6" path="res://assets/scripts/bat.gd" id="1_cnldk"]
 [ext_resource type="Texture2D" uid="uid://daxdce4fexpp6" path="res://assets/sprites/bat-sprite-sheet.png" id="1_uhqni"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cnldk"]
+radius = 34.034077
+height = 119.941284
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_cnldk"]
 atlas = ExtResource("1_uhqni")
 region = Rect2(0, 0, 500, 500)
@@ -67,20 +71,16 @@ animations = [{
 "speed": 12.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cnldk"]
-radius = 34.034077
-height = 119.941284
-
 [node name="bat" type="CharacterBody2D"]
 script = ExtResource("1_cnldk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-60, -20)
+rotation = 1.5777776
+shape = SubResource("CapsuleShape2D_cnldk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_67y1s")
 animation = &"fly"
 autoplay = "fly"
 frame_progress = 0.58064526
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-60, -20)
-rotation = 1.5777776
-shape = SubResource("CapsuleShape2D_cnldk")

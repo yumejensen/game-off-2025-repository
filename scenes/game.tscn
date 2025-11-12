@@ -27,7 +27,7 @@ position = Vector2(-650, -300)
 scale = Vector2(0.5, 0.5)
 
 [node name="Camera2D" type="Camera2D" parent="bat"]
-position = Vector2(654, 292)
+position = Vector2(-50, 4)
 scale = Vector2(2, 2)
 zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
